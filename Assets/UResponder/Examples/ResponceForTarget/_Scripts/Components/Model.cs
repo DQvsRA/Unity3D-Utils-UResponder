@@ -8,6 +8,7 @@ public class Model : MonoBehaviour {
     {
         UResponder.add(ServerResponces.GET_LEVELS, new Server.ResponceDelegate(ServerResponce_GetLevels), 0, this);
         UResponder.add(ServerResponces.POST_LEVEL_RESULT, new Server.ResponceDelegate(ServerResponce_PostLevelResult), 0, this);
+        UResponder.add(LevelNotifications.UPDATE_LEVEL, new LevelNotifications.LevelUpdateDelegate(UpdateLevelModel), 0, this);
     }
 
 	public void ServerResponce_GetLevels(ArrayList responce)
@@ -18,5 +19,10 @@ public class Model : MonoBehaviour {
     public void ServerResponce_PostLevelResult(ArrayList responce)
     {
         Debug.Log("> Model : ServerResponce ===> PostLevelResult :  " + responce);
+    }
+
+    public void UpdateLevelModel(object responce)
+    {
+        Debug.Log("> Model : LevelNotifications ===> UpdateLevelModel :  " + responce);
     }
 }

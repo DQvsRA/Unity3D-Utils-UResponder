@@ -106,8 +106,9 @@ namespace uresponder
         
         public static bool remove(string action = null) { return CORE.remove(action); }
         public static bool has(string action = null) {  return CORE.has(action); }
-        public static bool dispatch(string action = null, ArrayList args = null) { return CORE.dispatch(action, args); }
-        
+        public static bool dispatch(string action, ArrayList args = null) { return CORE.dispatch(action, args); }
+        //public static bool dispatch(string action, object target, ArrayList args = null) { return CORE.dispatch(action, target, args); }
+
         public void perform(ArrayList withParams = null) {
             // Call a listener in this UResponder.
             //Debug.Log("PERFORM: " + action + " with params:" + (withParams != null) + " | " + _listener.Method.Name);
