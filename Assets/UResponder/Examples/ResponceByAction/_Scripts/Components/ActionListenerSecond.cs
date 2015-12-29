@@ -2,7 +2,7 @@
 using System.Collections;
 using uresponder;
 
-public class Second : MonoBehaviour {
+public class ActionListenerSecond : MonoBehaviour {
 
     public static string ACTION_SECOND = "ACTION_SECOND";
 
@@ -22,7 +22,7 @@ public class Second : MonoBehaviour {
 
     void SecondFunction()
     {
-        Debug.Log("> Second ======> URESPONCE");
+        Debug.Log("> URESPONCE ======> Second");
     }
 
 }

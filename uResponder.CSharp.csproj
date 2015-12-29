@@ -68,10 +68,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\_Scripts\First.cs" />
-    <Compile Include="Assets\_Scripts\Main.cs" />
-    <Compile Include="Assets\_Scripts\Second.cs" />
-    <Compile Include="Assets\_Scripts\UResponder\UResponder.cs" />
+    <Compile Include="Assets\_Libs\UResponder\Examples\ResponceByAction\_Scripts\Components\ActionListenerFirst.cs" />
+    <Compile Include="Assets\_Libs\UResponder\Examples\ResponceByAction\_Scripts\Components\ActionListenerSecond.cs" />
+    <Compile Include="Assets\_Libs\UResponder\Examples\ResponceByAction\_Scripts\MainAction.cs" />
+    <Compile Include="Assets\_Libs\UResponder\Examples\ResponceForTarget\_Scripts\Components\Model.cs" />
+    <Compile Include="Assets\_Libs\UResponder\Examples\ResponceForTarget\_Scripts\Components\Server.cs" />
+    <Compile Include="Assets\_Libs\UResponder\Examples\ResponceForTarget\_Scripts\MainTarget.cs" />
+    <Compile Include="Assets\_Libs\UResponder\Examples\ResponceForTarget\_Scripts\constants\ServerResponces.cs" />
+    <Compile Include="Assets\_Libs\UResponder\UResponder.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
